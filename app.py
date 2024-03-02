@@ -5,10 +5,10 @@ import streamlit as st
 subjects = ["Physics", "Maths", "Chemisrty", "Biology", "Computer Science", "Hindi","English"]
 
 # Create a radio button for each subject
-selected_subject = st.radio("Select your preferred programming subject:", subjects)
+selected_subject = st.radio("Select your preferred subject:", subjects)
 
 # Display the selected subject back to the user
-st.write("The programming subject you selected is:", selected_subject)
+st.write("The subject you selected is:", selected_subject)
 
 # Define the main function
 def main():
@@ -30,8 +30,7 @@ def main():
     st.write(f"PT1: {pt1_input}")
     st.write(f"HF: {hf_input}")
     st.write(f"PT2: {pt2_input}")
-    st.write(f"Total: {total_marks}")
-    if selected_subject in["English","Maths","Hindi"]:
+    if selected_subject in ["English","Maths","Hindi"]:
         if round(total_marks)>=27:
             st.write("You have already passed!")
         else:
