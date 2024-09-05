@@ -40,6 +40,8 @@ def main():
         else:
             marks_to_score=(23-total_marks)*2
             st.write("You need to score ",round(marks_to_score),"marks in Session Ending Exam to pass")
+  
+  st.write("Note: percentage weightageused is PT1 - 20%, HF - 30%, PT2 - 20%)
 
 # Call the main function
 if __name__ == "__main__":
