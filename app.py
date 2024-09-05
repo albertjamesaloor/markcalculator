@@ -5,12 +5,11 @@ import streamlit as st
 subjects = ["Physics", "Maths", "Chemistry", "Biology", "Hindi", "Computer Science","English"]
 
 # Create a radio button for each subject
-tabs = st.tabs(subjects)
+selected_subject = st.selectbox('Select a subject', subjects)
 
-for idx, subject in enumerate(subjects):
-    with tabs[idx]:
-        st.write(f"**{subject}**")
-        st.write("Description of the subject...")
+st.write(f"**{subject}**")
+st.write("Description of the subject...")
+st.write("More information about the subject...")
 # Display the selected subject back to the user
 st.write("The subject you selected is:", selected_subject)
 
