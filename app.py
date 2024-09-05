@@ -29,40 +29,22 @@ def main():
   total_marks=0
   if submitted:
     total_marks = pt1_input*0.2 + hf_input*0.3 + pt2_input*0.2
-    
     st.write(f"You entered:")
     st.write(f"PT1: {pt1_input}")
     st.write(f"HF: {hf_input}")
     st.write(f"PT2: {pt2_input}")
-
-    EMH= 80/percentage
-    OTH= 70/percentage
     if selected_subject in ["English","Maths","Hindi"]:
-        if round(total_marks)>=EMH:
-          if percentage==33:
+        if round(total_marks)>=27:
             st.write("You have already passed!")
-          else:
-            st.write("You have already crossed", percentage)
         else:
-            marks_to_score=(EMH-total_marks)*2
-          if percentage==33:
-            st.write("You need to score ",round(marks_to_score),"marks in Session Ending Exam to pass")
-          else:
-            st.write("You need to score ",round(marks_to_score),"marks in Session Ending Exam to cross", percentage)
-    
+            marks_to_score=(27-total_marks)*2
+            st.write("You need to score ",round(marks_to_score),"marks in Session Ending Exam")
     else:
-        if round(total_marks)>=OTH:
-          if percentage==33:
+        if round(total_marks)>=23:
             st.write("You have already passed!")
-          else:
-            st.write("You have already crossed", OTH)
         else:
-            marks_to_score=(OTH-total_marks)*2
-          if percentage==33:
-            st.write("You need to score ",round(marks_to_score),"marks in Session Ending Exam to pass")
-          else:
-            st.write("You need to score ",round(marks_to_score),"marks in Session Ending Exam to cross", percentage)
-        
+            marks_to_score=(23-total_marks)*2
+            st.write("You need to score ",round(marks_to_score),"marks in Session Ending Exam")
 
 # Call the main function
 if __name__ == "__main__":
