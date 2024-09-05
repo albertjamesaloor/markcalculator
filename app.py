@@ -39,13 +39,13 @@ def main():
     OTH= 70/percentage
     if selected_subject in ["English","Maths","Hindi"]:
         if round(total_marks)>=EMH:
-          if percentage==33
+          if percentage==33:
             st.write("You have already passed!")
           else:
             st.write("You have already crossed", percentage)
         else:
             marks_to_score=(EMH-total_marks)*2
-          if percentage==33
+          if percentage==33:
             st.write("You need to score ",round(marks_to_score),"marks in Session Ending Exam to pass")
           else:
             st.write("You need to score ",round(marks_to_score),"marks in Session Ending Exam to cross", percentage)
