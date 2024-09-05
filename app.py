@@ -38,13 +38,13 @@ def main():
             st.write("You have already passed!")
         else:
             marks_to_score=(27-total_marks)*2
-            st.write("You need to score ",round(marks_to_score),"marks in Session Ending Exam")
+            st.write("You need to score ",round(marks_to_score),"marks in Session Ending Exam to pass")
     else:
         if round(total_marks)>=23:
             st.write("You have already passed!")
         else:
             marks_to_score=(23-total_marks)*2
-            st.write("You need to score ",round(marks_to_score),"marks in Session Ending Exam")
+            st.write("You need to score ",round(marks_to_score),"marks in Session Ending Exam to pass")
 
 # Call the main function
 if __name__ == "__main__":
