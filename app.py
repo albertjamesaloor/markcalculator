@@ -9,7 +9,7 @@ selected_subject = st.selectbox('Select a subject', subjects)
 st.write("The subject you selected is:", selected_subject)
 
 # Create a slider
-percentage = st.slider('Weightage:', 0, 100, 33)
+percentage = st.slider('Percentage:', 0, 100, 33)
 
 st.write(f'You selected: {percentage}%')
 
@@ -34,18 +34,34 @@ def main():
     st.write(f"PT1: {pt1_input}")
     st.write(f"HF: {hf_input}")
     st.write(f"PT2: {pt2_input}")
+
+    EMH= 80/percentage
+    OTH= 70/percentage
     if selected_subject in ["English","Maths","Hindi"]:
-        if round(total_marks)>=27:
+        if round(total_marks)>=EMH:
+          if percentage==33
             st.write("You have already passed!")
+          else:
+            st.write("You have already crossed", percentage)
         else:
-            marks_to_score=(27-total_marks)*2
+            marks_to_score=(EMH-total_marks)*2
+          if percentage==33
             st.write("You need to score ",round(marks_to_score),"marks in Session Ending Exam to pass")
+          else:
+            st.write("You need to score ",round(marks_to_score),"marks in Session Ending Exam to cross", percentage)
+    
     else:
-        if round(total_marks)>=23:
+        if round(total_marks)>=OTH:
+          if percentage==33
             st.write("You have already passed!")
+          else:
+            st.write("You have already crossed", OTH)
         else:
-            marks_to_score=(23-total_marks)*2
+            marks_to_score=(OTH-total_marks)*2
+          if percentage==33
             st.write("You need to score ",round(marks_to_score),"marks in Session Ending Exam to pass")
+          else:
+            st.write("You need to score ",round(marks_to_score),"marks in Session Ending Exam to cross", percentage)
         
 
 # Call the main function
