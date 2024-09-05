@@ -6,10 +6,6 @@ subjects = ["Physics", "Maths", "Chemistry", "Biology", "Hindi", "Computer Scien
 
 # Create a radio button for each subject
 selected_subject = st.selectbox('Select a subject', subjects)
-
-st.write(f"**{subject}**")
-st.write("Description of the subject...")
-st.write("More information about the subject...")
 # Display the selected subject back to the user
 st.write("The subject you selected is:", selected_subject)
 
