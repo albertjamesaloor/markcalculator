@@ -24,7 +24,7 @@ def main():
   total_marks=0
   if submitted:
     total_marks = pt1_input*0.2 + hf_input*0.3 + pt2_input*0.2
-    st.write("Note: percentage weightage used is PT1 - 20%, HF - 30%, PT2 - 20%)
+    
     st.write(f"You entered:")
     st.write(f"PT1: {pt1_input}")
     st.write(f"HF: {hf_input}")
@@ -41,7 +41,10 @@ def main():
         else:
             marks_to_score=(23-total_marks)*2
             st.write("You need to score ",round(marks_to_score),"marks in Session Ending Exam to pass")
+        
 
 # Call the main function
 if __name__ == "__main__":
   main()
+
+st.write("Note: percentage weightage used is PT1 - 20%, HF - 30%, PT2 - 20%")
