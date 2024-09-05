@@ -2,10 +2,10 @@
 import streamlit as st
 
 # Define a list of subjects
-subjects = ["Physics", "Maths", "Chemisrty", "Biology", "Computer Science","English"]
+subjects = ["Physics", "Maths", "Chemistry", "Biology", "Hindi", "Computer Science","English"]
 
 # Create a radio button for each subject
-selected_subject = st.radio("Select your preferred subject:", subjects)
+selected_subject = st.select_slider("Select your preferred subject:", options=subjects)
 
 # Display the selected subject back to the user
 st.write("The subject you selected is:", selected_subject)
