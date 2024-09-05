@@ -47,4 +47,4 @@ def main():
 if __name__ == "__main__":
   main()
 
-st.write("Note: percentage weightage used is PT1 - 20%, HF - 30%, PT2 - 20%")
+st.write("Note: percentage weightage used is PT1 - 20%, HF - 30%, PT2 - 20%, SEE - 50%")
