@@ -2,7 +2,7 @@
 import streamlit as st
 
 # Define a list of subjects
-subjects = ["Physics", "Maths", "Chemisrty", "Biology", "Computer Science", "Hindi","English"]
+subjects = ["Physics", "Maths", "Chemisrty", "Biology", "Computer Science","English"]
 
 # Create a radio button for each subject
 selected_subject = st.radio("Select your preferred subject:", subjects)
