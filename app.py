@@ -1,6 +1,14 @@
 # Import the Streamlit library
 import streamlit as st
 
+# Add a background image
+@st.cache(allow_output_mutation=True)
+def load_image(image_path):
+    return st.image(image_path, use_column_width=True)
+
+image_path = '"C:\Users\Akhil\Desktop\background.jpg"'  # Replace with your image path
+load_image(image_path)
+
 # Define a list of subjects
 subjects = ["Physics", "Maths", "Chemistry", "Biology", "Hindi", "Computer Science","English"]
 
