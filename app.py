@@ -64,7 +64,7 @@ def main():
               if percentage==33:
                 st.write("You need to score ",round(marks_to_score),"marks in Session Ending Exam to pass")
               else:
-              st.write("You need to score ",round(marks_to_score),"marks in Session Ending Exam to cross",percentage, "%")
+                st.write("You need to score ",round(marks_to_score),"marks in Session Ending Exam to cross",percentage, "%")
             else:
             st.write("Sorry... it is not possible, realise your past mistakes and don't let them repeat.")
 
