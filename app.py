@@ -28,7 +28,7 @@ def main():
   # Display the entered marks if the form is submitted
   total_marks=0
   EMH=80*percentage/100
-  otH=70*percentage/100
+  OTH=70*percentage/100
   if submitted:
     total_marks = pt1_input*0.2 + hf_input*0.3 + pt2_input*0.2
     st.write(f"You entered:")
