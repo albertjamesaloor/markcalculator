@@ -9,9 +9,9 @@ selected_subject = st.selectbox('Select a subject', subjects)
 st.write("The subject you selected is:", selected_subject)
 
 # Create a slider
-#percentage = st.slider('Percentage:', 33, 100)
+percentage = st.slider('Percentage:', 33, 100)
 
-#st.write(f'You selected: {percentage}%')
+st.write(f'You selected: {percentage}%')
 
 # Define the main function
 def main():
