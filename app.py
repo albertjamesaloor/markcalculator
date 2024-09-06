@@ -52,7 +52,7 @@ def main():
           else:
             st.write("Sorry... it is not possible, realise your past mistakes and don't let them repeat.")
     else:
-        st.write("You have currently secured", round(total_marks), "out of 70")
+          st.write("You have currently secured", round(total_marks), "out of 70")
           if round(total_marks)>=OTH:
             if percentage==33:
               st.write("You have already passed!")
