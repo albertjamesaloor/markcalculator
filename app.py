@@ -50,7 +50,7 @@ def main():
             else:
               st.write("You need to score ",round(marks_to_score),"marks in Session Ending Exam to cross",percentage, "%")
           else:
-            st.write("Sorry... it is not possible, realise your past mistakes and don't let them repeat.")
+            st.write("Sorry... it is not possible, realise your past mistakes and don't let them repeat. Strive for a lesser score")
     else:
           st.write("You have currently secured", round(total_marks), "out of 70")
           if round(total_marks)>=OTH:
@@ -66,7 +66,7 @@ def main():
               else:
                 st.write("You need to score ",round(marks_to_score),"marks in Session Ending Exam to cross",percentage, "%")
             else:
-              st.write("Sorry... it is not possible, realise your past mistakes and don't let them repeat.")
+              st.write("Sorry... it is not possible, realise your past mistakes and don't let them repeat. Strive for a lesser score")
 
 # Call the main function
 if __name__ == "__main__":
