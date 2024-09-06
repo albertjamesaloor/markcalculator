@@ -44,23 +44,29 @@ def main():
             st.write("You have crossed ", percentage, "%")
         else:
           marks_to_score=(EMH-total_marks)*2
-          if percentage==33:
-            st.write("You need to score ",round(marks_to_score),"marks in Session Ending Exam to pass")
+          if marks_to_score<=80:
+            if percentage==33:
+              st.write("You need to score ",round(marks_to_score),"marks in Session Ending Exam to pass")
+            else:
+              st.write("You need to score ",round(marks_to_score),"marks in Session Ending Exam to cross",percentage, "%")
           else:
-            st.write("You need to score ",round(marks_to_score),"marks in Session Ending Exam to cross",percentage, "%")
+            st.write("Sorry... it is not possible, realise your past mistakes and don't let them repeat.)
     else:
         st.write("You have currently secured", round(total_marks), "out of 70")
-        if round(total_marks)>=OTH:
-          if percentage==33:
-            st.write("You have already passed!")
+          if round(total_marks)>=OTH:
+            if percentage==33:
+              st.write("You have already passed!")
+            else:
+              st.write("You have crossed ", percentage, "%")
           else:
-            st.write("You have crossed ", percentage, "%")
-        else:
-          marks_to_score=(OTH-total_marks)*2
-          if percentage==33:
-            st.write("You need to score ",round(marks_to_score),"marks in Session Ending Exam to pass")
-          else:
-            st.write("You need to score ",round(marks_to_score),"marks in Session Ending Exam to cross",percentage, "%")
+            marks_to_score=(OTH-total_marks)*2
+            if marks_to_score<=70:
+              if percentage==33:
+                st.write("You need to score ",round(marks_to_score),"marks in Session Ending Exam to pass")
+              else:
+              st.write("You need to score ",round(marks_to_score),"marks in Session Ending Exam to cross",percentage, "%")
+            else:
+            st.write("Sorry... it is not possible, realise your past mistakes and don't let them repeat.)
 
 # Call the main function
 if __name__ == "__main__":
