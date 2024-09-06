@@ -36,7 +36,7 @@ def main():
     st.write(f"HF: {hf_input}")
     st.write(f"PT2: {pt2_input}")
     if selected_subject in ["English","Maths","Hindi"]:
-      st.write("You have currently secured", total_marks, "out of 80")
+        st.write("You have currently secured", total_marks, "out of 80")
         if round(total_marks)>=EMH:
           if percentage==33:
             st.write("You have already passed!")
@@ -49,7 +49,7 @@ def main():
           else:
             st.write("You need to score ",round(marks_to_score),"marks in Session Ending Exam to cross",percentage, "%")
     else:
-      st.write("You have currently secured", total_marks, "out of 70")
+        st.write("You have currently secured", total_marks, "out of 70")
         if round(total_marks)>=OTH:
           if percentage==33:
             st.write("You have already passed!")
