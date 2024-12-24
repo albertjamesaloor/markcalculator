@@ -10,8 +10,10 @@ def main():
     while name != "":
         if name.capitalize() not in ["Adithyan", "Alan", "Aravind", "Alex", "Bhavya", "Raza", "Nivedita"]:
             st.write(name,", you don't need to go.")
+            name = ""
         else:
             st.write(name,", attend biology class.")
+            name = ""
 
   
 
