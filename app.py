@@ -2,10 +2,11 @@
 import streamlit as st
 
 
-name = st.text_input("Enter your first name:", placeholder="Type here...")
+
 
 # Define the main function
 def main():
+    name = st.text_input("Enter your first name:", placeholder="Type here...")
     while name != "":
         if name.capitalize() not in ["Adithyan", "Alan", "Aravind", "Alex", "Bhavya", "Raza", "Nivedita"]:
             st.write(name,", you don't need to go.")
