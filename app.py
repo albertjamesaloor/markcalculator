@@ -6,7 +6,7 @@ name = st.text_input("Enter your first name:", placeholder="Type here...")
 
 # Define the main function
 def main():
-    if name not in ["Adithyan", "Alan", "Aravind", "Alex", "Bhavya", "Raza", "Nivedita"]:
+    if name.capitalize() not in ["Adithyan", "Alan", "Aravind", "Alex", "Bhavya", "Raza", "Nivedita"]:
         st.write(name,", you don't need to go.")
     else:
         st.write(name,", attend biology class.")
